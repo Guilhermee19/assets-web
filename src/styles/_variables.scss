@@ -1,0 +1,57 @@
+:root {
+  --bg-default: linear-gradient(
+    127deg,
+    rgba(0, 153, 238, 1) 0%,
+    rgba(0, 42, 116, 1) 100%
+  );
+  font-size: calc(16px + 0.3125vw);
+  --ts: all 0.3s ease-in-out;
+  --br: 0.5rem;
+  --time-c-b: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  --text-color: #000000;
+  --main-color: #302b2b;
+  --primary-bg: #fff;
+  --secondary-bg: #e9e9e9;
+
+  --yellow-color: #f2af4c;
+  --green-color: #5dc983;
+  --red-color: #eb5769;
+
+  --skeleton-bg: #e9e9e9;
+  --skeleton-bg-dark: #d9d9d9;
+
+  --avatar-dark-color: #000000;
+  --avatar-light-color: #ffffff;
+  --avatar-br: 50%;
+  --avatar-ratio: 1/1;
+
+  // ? Navbar variables
+  --width: 90%;
+  --max-width: 1640px;
+  --nav-logo-h: 50px;
+
+  --nav-position: relative;
+  --nav-bg: #fff; // transparent
+  --nav-padding: 0px 10px;
+
+  --nav-scroll-bg: #f00;
+  --nav-scroll-color: #fff;
+  --nav-scroll-padding: 0 10px;
+
+  --nav-shadow: 0.1px 0.1px 2.2px rgba(0, 0, 0, 0.02),
+    0.3px 0.1px 5.3px rgba(0, 0, 0, 0.028),
+    0.6px 0.3px 10px rgba(0, 0, 0, 0.035),
+    1.1px 0.4px 17.9px rgba(0, 0, 0, 0.042),
+    2.1px 0.8px 33.4px rgba(0, 0, 0, 0.05), 5px 2px 80px rgba(0, 0, 0, 0.07);
+}
+
+// ? CSS para efeito de vidro blur
+@mixin glass-effect() {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}

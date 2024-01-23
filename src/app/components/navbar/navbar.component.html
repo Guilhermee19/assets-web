@@ -1,0 +1,34 @@
+<nav
+  #navbar
+  [ngClass]="{ scroll }"
+  [ngStyle]="{ '--navbar-height': navbar_height + 'px' }"
+>
+  <div class="content">
+    <a class="logo" routerLink="/">
+      <img src="assets/images/logo.png" alt="logo" />
+    </a>
+
+    <div class="hamburger" [ngClass]="{ active: !navbar_hidden }">
+      <button
+        aria-label="menu"
+        mat-icon-button
+        (click)="navbar_hidden = !navbar_hidden"
+      >
+        <span class="line"></span>
+      </button>
+    </div>
+
+    <div class="menu {{ colapse }}" [ngClass]="{ hidden: navbar_hidden }">
+      <a mat-button routerLink="/text">
+        <i icon="folder_close"> Texto </i>
+      </a>
+      <a mat-button routerLink="/image">
+        <i icon="folder_close"> Imagem </i>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div>
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>

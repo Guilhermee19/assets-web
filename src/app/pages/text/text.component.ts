@@ -16,6 +16,6 @@ export class TextComponent {
   });
 
   loginSubmitHandler(){
-
+    console.log();
   }
 }

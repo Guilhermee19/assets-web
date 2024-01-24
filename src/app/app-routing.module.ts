@@ -17,12 +17,17 @@ const routes: Routes = [
         loadChildren: () =>
           import('./pages/image/image.module').then((m) => m.ImageModule),
       },
+      {
+        path: 'color',
+        loadChildren: () =>
+          import('./pages/color/color.module').then((m) => m.ColorModule),
+      },
     ],
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

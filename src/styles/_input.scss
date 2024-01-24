@@ -37,6 +37,7 @@
     background-color: var(--secondary-bg);
     outline: none;
     color: var(--text-color);
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
 
     &[type='number'] {
       -webkit-appearance: textfield;

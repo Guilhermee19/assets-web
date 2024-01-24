@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './color.component.html',
   styleUrls: ['./color.component.scss'],
 })
-export class ColorComponent {}
+export class ColorComponent {
+  color = '#7110cd';
+}

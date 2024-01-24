@@ -36,21 +36,23 @@ export class TextComponent {
   loginSubmitHandler(event: any) {
     const action = event.submitter.innerText;
 
-    const input = (this.form.get('input')?.value || '')?.toLowerCase();
-
     if (action === 'MAIÚSCULO') {
+      const input = (this.form.get('input')?.value || '')?.toLowerCase();
       this.form.patchValue({ input: input?.toUpperCase() });
     }
 
     if (action === 'minusculo') {
+      const input = (this.form.get('input')?.value || '')?.toLowerCase();
       this.form.patchValue({ input: input?.toLowerCase() });
     }
 
     if (action === 'Inverter') {
+      const input = this.form.get('input')?.value || '';
       this.form.patchValue({ input: input?.split('').reverse().join('') });
     }
 
     if (action === 'Primeira Letra') {
+      const input = (this.form.get('input')?.value || '')?.toLowerCase();
       const words = input?.split(' ');
       const capitalizedWords = words?.map((word) => {
         if (this.ignore.includes(word)) {
@@ -61,6 +63,7 @@ export class TextComponent {
     }
 
     if (action === 'Primeira palavra') {
+      const input = (this.form.get('input')?.value || '')?.toLowerCase();
       this.form.patchValue({
         input: input?.charAt(0).toUpperCase() + input?.slice(1),
       });

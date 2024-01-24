@@ -1,14 +1,10 @@
-<nav
-  #navbar
-  [ngClass]="{ scroll }"
-  [ngStyle]="{ '--navbar-height': navbar_height + 'px' }"
->
+<nav #navbar>
   <div class="content">
     <a class="logo" routerLink="/">
       <img src="assets/images/logo.png" alt="logo" />
     </a>
 
-    <div class="menu {{ colapse }}" [ngClass]="{ hidden: navbar_hidden }">
+    <div class="menu">
       <a mat-button routerLink="/text" routerLinkActive="active">
         <i icon="text"> </i>
       </a>

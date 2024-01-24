@@ -62,47 +62,6 @@ nav {
       align-items: center;
       gap: 0.8rem;
 
-      @include media('<=navbar-collapse') {
-        transition: var(--ts);
-        transition-duration: 0.5s;
-        transition-delay: 0.1s;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 100%;
-        flex-grow: 1;
-        flex-wrap: wrap;
-        position: absolute;
-        width: 100%;
-        z-index: -1;
-        opacity: 1;
-        @include glass-effect();
-
-        &.vertical {
-          left: 0;
-          top: 60px;
-          &.hidden {
-            top: -50vh;
-            opacity: 0;
-          }
-        }
-        &.horizontal {
-          justify-content: flex-start;
-          align-items: flex-start;
-          padding-top: var(--navbar-height, 0);
-          height: 100vh;
-          top: 0;
-          left: 0;
-          z-index: 1;
-          &.hidden {
-            left: -100vw;
-            opacity: 0;
-          }
-        }
-        &.hidden {
-          opacity: 0;
-        }
-      }
       a,
       button {
         color: rgba(255, 255, 255, 0.505);
@@ -114,12 +73,6 @@ nav {
           color: #ffffff;
         }
       }
-    }
-  }
-
-  &.scroll {
-    .content {
-      flex-direction: column;
     }
   }
 }

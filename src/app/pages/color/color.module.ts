@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ColorRoutingModule } from './color-routing.module';
+import { ColorComponent } from './color.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ColorComponent
+  ],
   imports: [
     CommonModule,
     ColorRoutingModule

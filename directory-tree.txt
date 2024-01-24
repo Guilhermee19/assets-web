@@ -1,4 +1,4 @@
-/home/kaualandi/dev/website-template-base
+/home/kaualandi/dev/assets-web
 ├── README.md
 ├── angular.json
 ├── directory-tree.txt

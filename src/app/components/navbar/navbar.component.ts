@@ -16,8 +16,6 @@ export class NavbarComponent implements OnInit {
   @Input() colapse: 'vertical' | 'horizontal' = 'vertical';
   @ViewChild('navbar') navbar: ElementRef<HTMLElement> | undefined;
 
-  constructor() {}
-
   loading = false;
 
   navbar_hidden = true;

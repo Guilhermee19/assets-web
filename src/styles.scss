@@ -62,3 +62,12 @@ body {
   backdrop-filter: blur(1px);
   background: rgb(30 30 30 / 30%) !important;
 }
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}

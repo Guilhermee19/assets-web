@@ -4,18 +4,16 @@ import { FormBuilder } from '@angular/forms';
 @Component({
   selector: 'app-text',
   templateUrl: './text.component.html',
-  styleUrl: './text.component.scss'
+  styleUrls: ['./text.component.scss'],
 })
 export class TextComponent {
-  constructor(
-    private fb: FormBuilder,
-  ) {}
+  constructor(private fb: FormBuilder) {}
 
   form = this.fb.group({
-    input: [""],
+    input: [''],
   });
 
-  loginSubmitHandler(){
-
+  loginSubmitHandler() {
+    console.log();
   }
 }

@@ -16,4 +16,13 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ```
 
-<!-- [![npm](https://img.shields.io/npm/v/vue3-particles)](https://www.npmjs.com/package/vue3-particles)  -->
+## Funcionalidades
+[x] Converter Maiúsculas e Minúsculas
+
+[ ] Gerador de Qrcode
+
+[ ] Editor de imagem(cortar e salvar)
+
+[ ] Transformar imagem p/ base64
+
+[ ] Color picker

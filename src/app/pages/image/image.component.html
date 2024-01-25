@@ -1,1 +1,12 @@
-<section></section>
+<section>
+  <qrcode
+    [qrdata]="image_form.value.link || ''"
+    [width]="256"
+    [errorCorrectionLevel]="'M'"
+    [margin]="1"
+  ></qrcode>
+
+  <form [formGroup]="image_form">
+    <input matInput title="link" type="text" formControlName="link" />
+  </form>
+</section>

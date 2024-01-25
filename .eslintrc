@@ -17,6 +17,8 @@
         "prettier"
       ],
       "rules": {
+        "camelcase": "off",
+        "dot-notation": "off",
         "@angular-eslint/directive-selector": [
           "error",
           {
@@ -31,9 +33,7 @@
             "style": "kebab-case"
           }
         ],
-        "no-useless-constructor": "off",
-        "camelcase": "off",
-        "dot-notation": "off"
+        "no-useless-constructor": "off"
       }
     },
     {

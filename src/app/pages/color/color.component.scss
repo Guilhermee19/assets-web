@@ -1,0 +1,17 @@
+section {
+  width: 90%;
+  min-height: calc(100vh - 100px);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card-color {
+    width: 500px;
+    border-radius: 10px;
+    background-color: #323232;
+  }
+}

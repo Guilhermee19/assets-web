@@ -1,0 +1,13 @@
+{
+  "close": "Close",
+  "save": "Save",
+  "edit": "To Edit",
+  "delet": "Delete",
+  "add": "Add",
+  "back": "Back",
+  "navbar":{
+    "start": "Start",
+    "about": "About",
+    "contact": "Contact"
+  }
+}

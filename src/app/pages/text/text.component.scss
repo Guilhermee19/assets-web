@@ -1,0 +1,26 @@
+section {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 100px;
+
+  form {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .card-input {
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
+
+    .primary {
+      flex: 1;
+    }
+  }
+}

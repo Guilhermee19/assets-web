@@ -1,4 +1,4 @@
-## Assets v1
+## Assets v0.1
 ### @author [Guilhermee19 🔗](http://iamgui.dev)
 
 
@@ -19,7 +19,7 @@
 ## Funcionalidades
 [x] Converter Maiúsculas e Minúsculas
 
-[ ] Gerador de Qrcode
+[x] Gerador de Qrcode
 
 [ ] Editor de imagem(cortar e salvar)
 

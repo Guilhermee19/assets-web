@@ -31,6 +31,7 @@
   input,
   textarea,
   select {
+    width: 100%;
     padding: 12px 16px;
     border-radius: 10px;
     border: 1px solid var(--secondary-bg);
@@ -59,10 +60,6 @@
 
   .mat-button {
     height: 41px;
-  }
-
-  & + .card-input {
-    margin-top: 1rem;
   }
 }
 

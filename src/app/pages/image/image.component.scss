@@ -11,5 +11,26 @@ section {
   gap: 1rem;
 
   form {
+    width: 90%;
+    max-width: 400px;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+
+      input {
+        width: 45%;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  button {
+    width: 90%;
+    max-width: 400px;
   }
 }

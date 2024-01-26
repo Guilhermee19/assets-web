@@ -26,3 +26,21 @@
 [ ] Transformar imagem p/ base64
 
 [ ] Color picker
+
+[ ] Gerar dados de teste
+
+[ ] Pesquisa github
+
+
+## Update de funcionalidades
+- QRCode
+
+[ ] Opção p/ Qrcode (senha de wifi, google maps, wpp, email, chamada telefonica, spotify)
+
+
+## Usabilidade
+[ ] Tradução do site (portugues e inglês)
+
+[ ] Colocar ele como extenção p/ navegadores
+
+[ ] Colocar ele como app

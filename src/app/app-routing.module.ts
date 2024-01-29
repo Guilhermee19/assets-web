@@ -2,11 +2,18 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+const SPR = false;
+
 const routes: Routes = [
   {
     path: '',
     component: NavbarComponent,
     children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./pages/home/home.module').then((m) => m.HomeModule),
+      },
       {
         path: 'text',
         loadChildren: () =>
@@ -22,12 +29,20 @@ const routes: Routes = [
         loadChildren: () =>
           import('./pages/color/color.module').then((m) => m.ColorModule),
       },
+      {
+        path: '**',
+        redirectTo: '',
+      },
     ],
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: SPR ? 'enabled' : 'disabled',
+    }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

@@ -1,0 +1,21 @@
+<section>
+
+  <div class="circle">
+    <div class="border-circle"></div>
+    <div class="border-circle"></div>
+
+    <div class="date">
+      <h5> {{ today | date: 'dd'}} </h5>
+      <h5> {{ today | date: 'MMM'}} </h5>
+    </div>
+
+    <div class="time">
+      <h1> {{ today | date: 'HH'}} </h1>
+      <h1>:</h1>
+      <h1> {{ today | date: 'mm'}} </h1>
+    </div>
+
+    <h5 class="week"> {{ today | date: 'EEE'}} </h5>
+    <!-- <div class="shodow"></div> -->
+  </div>
+</section>

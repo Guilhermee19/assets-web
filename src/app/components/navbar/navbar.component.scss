@@ -24,6 +24,7 @@ nav {
   box-shadow: var(--nav-shadow);
   transition: var(--ts);
   @include glass-effect();
+  z-index: 50;
 
   .content {
     margin: 0 auto;

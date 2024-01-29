@@ -26,10 +26,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-<<<<<<< HEAD
-=======
               "src/manifest.webmanifest",
->>>>>>> e33657490f66afb965202db22b13df4822527463
               "src/_redirects"
             ],
             "styles": [
@@ -122,11 +119,7 @@
     }
   },
   "cli": {
-<<<<<<< HEAD
-    "analytics": false,
-=======
     "analytics": "1d1873f2-b407-41f7-ac38-76e6872707e2",
->>>>>>> e33657490f66afb965202db22b13df4822527463
     "schematicCollections": [
       "@angular-eslint/schematics"
     ]

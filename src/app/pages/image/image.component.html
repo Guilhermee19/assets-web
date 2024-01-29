@@ -12,6 +12,10 @@
     [colorLight]="image_form.value.bg_color || '#ffffff'"
   ></qrcode>
 
+  <button mat-button class="primary" (click)="saveAsImage(parent)">
+    Baixar QRCode
+  </button>
+
   <form [formGroup]="image_form">
     <div class="card-input">
       <label for="link"> Link </label>
@@ -43,7 +47,5 @@
     </div>
   </form>
 
-  <button mat-button class="primary" (click)="saveAsImage(parent)">
-    Baixar QRCode
-  </button>
+
 </section>

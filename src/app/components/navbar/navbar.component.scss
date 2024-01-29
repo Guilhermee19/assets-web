@@ -33,7 +33,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: inherit;
-    padding: 0.2rem 0;
+    padding: 0.1rem 0;
     gap: 0.8rem;
 
     @include media('<=navbar-collapse') {
@@ -47,7 +47,7 @@ nav {
       align-items: center;
       text-decoration: none;
       font-weight: 500;
-      font-size: 1.2rem !important;
+      font-size: 1rem !important;
 
       img {
         height: var(--nav-logo-h);
@@ -67,7 +67,7 @@ nav {
       button {
         color: rgba(255, 255, 255, 0.505);
         i {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
 
         &.active {

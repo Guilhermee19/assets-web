@@ -10,6 +10,11 @@ section {
   align-items: center;
   gap: 1rem;
 
+  button {
+    width: 90%;
+    max-width: 256px;
+  }
+
   form {
     width: 90%;
     max-width: 400px;
@@ -40,10 +45,5 @@ section {
         }
       }
     }
-  }
-
-  button {
-    width: 90%;
-    max-width: 400px;
   }
 }

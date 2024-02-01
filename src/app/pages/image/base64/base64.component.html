@@ -1,0 +1,53 @@
+<section>
+  <form (ngSubmit)="convertSubmitHandler()" [formGroup]="image_form" [ngClass]="{'reverse': right_to_left}">
+    <header>
+      <h1> Base64 </h1>
+      <h1> para </h1>
+      <h1> Imagem </h1>
+    </header>
+
+    <div class="card-input">
+      <textarea matInput id="link" type="text" rows="8" placeholder="Codigo Base64" formControlName="base64"></textarea>
+    </div>
+
+    <button title="right_left" mat-mini-fab  (click)="reset()">
+      <i icon="right_left"></i>
+    </button>
+
+    <div *ngIf="right_to_left" class="border-image" (click)="fileImage.click()">
+      <img *ngIf="image_form.value.image" [src]="image_form.value.image" alt="">
+
+      <i *ngIf="!image_form.value.image" icon="upload"></i>
+      <p *ngIf="!image_form.value.image"> Drag & Drop to Upload File </p>
+      <input
+        type="file"
+        #fileImage
+        inputFile="base64"
+        style="display: none"
+        e
+        accept="image/*"
+        multiple
+        (upload)="handleFileUpload($event, 'image')"
+      />
+    </div>
+
+    <figure *ngIf="!right_to_left">
+      <img *ngIf="!image_form.value.image" src="../../../../assets/images/default-placeholder.png" alt="">
+      <img *ngIf="image_form.value.image" [src]="image_form.value.image" alt="">
+    </figure>
+
+    <div class="buttons">
+      <button mat-button type="submit" class="primary">
+        Converter
+      </button>
+
+      <!-- <button *ngIf="right_to_left && image_form.value.base64" mat-button type="submit" class="primary" (click)="copiarParaClipboard()">
+        Copiar
+      </button>
+
+      <button *ngIf="!right_to_left && image_form.value.image" mat-button type="submit" class="primary">
+        Baixar
+      </button> -->
+    </div>
+  </form>
+</section>

@@ -7,6 +7,16 @@ const routes: Routes = [
     path: '',
     component: ImageComponent,
   },
+  {
+    path: 'qrcode',
+    loadChildren: () =>
+      import('./qrcode-custom/qrcode-custom.module').then((m) => m.QrcodeCustomModule),
+  },
+  {
+    path: 'base64',
+    loadChildren: () =>
+      import('./base64/base64.module').then((m) => m.Base64Module),
+  },
 ];
 
 @NgModule({

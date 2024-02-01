@@ -1,0 +1,49 @@
+section {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  button {
+    width: 90%;
+    max-width: 256px;
+  }
+
+  form {
+    width: 90%;
+    max-width: 400px;
+
+    .card-input {
+      label {
+        color: white;
+      }
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+
+      .card-input {
+        width: 45%;
+
+        label {
+          color: white;
+        }
+
+        input {
+          height: 40px;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

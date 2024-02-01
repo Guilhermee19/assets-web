@@ -3,47 +3,45 @@ section {
   max-width: var(--max-width);
   margin: 0 auto;
   padding-top: 100px;
-
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
 
-  button {
-    width: 90%;
-    max-width: 256px;
-  }
+  .card-router {
+    width: 250px;
+    background: rgb(25, 61, 219);
+    background: linear-gradient(
+      127deg,
+      rgba(25, 61, 219, 1) 0%,
+      rgba(31, 81, 225, 1) 100%
+    );
+    border-radius: 8px 8px 25px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    text-decoration: auto;
 
-  form {
-    width: 90%;
-    max-width: 400px;
+    figure {
+      width: 80%;
+      display: flex;
+      aspect-ratio: 1/1;
+      transform: rotate(-15deg) translateY(-30px) translateX(10px);
 
-    .card-input {
-      label {
-        color: white;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 20px;
       }
     }
 
-    .row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 1rem 0;
-
-      .card-input {
-        width: 45%;
-
-        label {
-          color: white;
-        }
-
-        input {
-          height: 40px;
-          padding: 0;
-          margin: 0;
-        }
-      }
+    h1 {
+      color: white;
+      text-decoration: dashed;
+      text-align: center;
     }
   }
 }

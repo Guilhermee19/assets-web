@@ -1,0 +1,51 @@
+<section>
+  <qrcode
+    #parent
+    [qrdata]="image_form.value.link || ''"
+    [width]="256"
+    [errorCorrectionLevel]="'M'"
+    [margin]="image_form.value.size || 0"
+    [elementType]="'img'"
+    [imageHeight]="75"
+    [imageWidth]="75"
+    [colorDark]="image_form.value.color || '#323232'"
+    [colorLight]="image_form.value.bg_color || '#ffffff'"
+  ></qrcode>
+
+  <button mat-button class="primary" (click)="saveAsImage(parent)">
+    Baixar QRCode
+  </button>
+
+  <form [formGroup]="image_form">
+    <div class="card-input">
+      <label for="link"> Link </label>
+      <input matInput id="link" type="text" formControlName="link" />
+    </div>
+
+    <div class="row">
+      <div class="card-input">
+        <label for="link"> Cor barra </label>
+        <input matInput title="color" type="color" formControlName="color" />
+      </div>
+
+      <div class="card-input">
+        <label for="link"> Cor Fundo </label>
+        <input
+          matInput
+          title="bg_color"
+          type="color"
+          formControlName="bg_color"
+        />
+      </div>
+    </div>
+
+    <div class="card-input">
+      <label for="link"> Borda </label>
+      <mat-slider min="0" max="5" step="0.5" formControlName="size">
+        <input title="range" matSliderThumb />
+      </mat-slider>
+    </div>
+  </form>
+
+
+</section>

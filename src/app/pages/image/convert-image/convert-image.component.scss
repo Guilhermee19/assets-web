@@ -1,0 +1,12 @@
+section {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

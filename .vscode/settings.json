@@ -3,10 +3,14 @@
   "editor.formatOnSave": true,
   "eslint.packageManager": "npm",
   "[javascript]": {
-    "editor.codeActionsOnSave": { "source.fixAll.eslint": true }
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
   },
   "[typescript]": {
-    "editor.codeActionsOnSave": { "source.fixAll.eslint": true }
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
   },
   "files.associations": {
     ".sequelizerc": "javascript",
@@ -18,10 +22,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "eslint.validate": [
-    "javascript",
-    "typescript"
-  ],
+  "eslint.validate": ["javascript", "typescript"],
   "[javascript][typescript]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit"

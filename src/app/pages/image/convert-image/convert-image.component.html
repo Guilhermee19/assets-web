@@ -1,0 +1,8 @@
+<section>
+  <div>
+    <input title="update" type="file" (change)="convertImageToWebP($event)" />
+  </div>
+  <div *ngIf="convertedImageSrc">
+    <img [src]="convertedImageSrc" alt="Imagem Convertida" />
+  </div>
+</section>

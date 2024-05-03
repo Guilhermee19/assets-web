@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval, map } from 'rxjs';
 
 @Component({
   selector: 'app-home',

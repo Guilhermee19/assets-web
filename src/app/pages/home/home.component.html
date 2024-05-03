@@ -5,19 +5,19 @@
     <div class="border-circle"></div>
 
     <div class="date">
-      <h5> {{ (today | async) | date: 'dd'}} </h5>
-      <h5> {{ (today | async) | date: 'MMM'}} </h5>
+      <h5> {{ (now | async) | date: 'dd'}} </h5>
+      <h5> {{ (now | async) | date: 'MMM'}} </h5>
     </div>
 
     <div class="time">
-      <h1> {{ (today | async) | date: 'HH'}} </h1>
+      <h1> {{ (now | async) | date: 'HH'}} </h1>
       <h1>:</h1>
-      <h1> {{ (today | async) | date: 'mm'}} </h1>
+      <h1> {{ (now | async) | date: 'mm'}} </h1>
       <h1>:</h1>
-      <h1> {{ (today | async) | date: 'ss'}} </h1>
+      <h1> {{ (now | async) | date: 'ss'}} </h1>
     </div>
 
-    <h5 class="week"> {{ (today | async) | date: 'EEE'}} </h5>
+    <h5 class="week"> {{ (now | async) | date: 'EEE'}} </h5>
     <!-- <div class="shodow"></div> -->
   </div>
 </section>

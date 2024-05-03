@@ -29,6 +29,7 @@ const routes: Routes = [
         loadChildren: () =>
           import('./pages/color/color.module').then((m) => m.ColorModule),
       },
+      { path: 'annotation', loadChildren: () => import('./pages/annotation/annotation.module').then(m => m.AnnotationModule) },
       {
         path: '**',
         redirectTo: '',

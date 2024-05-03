@@ -1,0 +1,44 @@
+<main>
+  <!-- <div class="coll" *ngFor="let coll of colls">
+    <h2>{{ coll.title }}</h2>
+
+    <div
+      cdkDropList
+      #todoList="cdkDropList"
+      [cdkDropListData]="todo"
+      [cdkDropListConnectedTo]="[doneList]"
+      class="space-tasks"
+      (cdkDropListDropped)="drop($event)">
+      <div class="card-task" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+    </div>
+  </div> -->
+
+  <div class="coll">
+    <h2>To do</h2>
+
+    <div
+      cdkDropList
+      #todoList="cdkDropList"
+      [cdkDropListData]="todo"
+      [cdkDropListConnectedTo]="[doneList]"
+      class="space-tasks"
+      (cdkDropListDropped)="drop($event)">
+      <div class="card-task" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+  <div class="coll">
+    <h2>Done</h2>
+
+    <div
+      cdkDropList
+      #doneList="cdkDropList"
+      [cdkDropListData]="done"
+      [cdkDropListConnectedTo]="[todoList]"
+      class="space-tasks"
+      (cdkDropListDropped)="drop($event)">
+      <div class="card-task" *ngFor="let item of done" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+</main>
